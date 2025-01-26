@@ -9,7 +9,12 @@ export const todolist = createSlice({
     name: 'todo',
     initialState,
     reducers: {
-        addTodo: (state , action) => {},
+        addTodo: (state , action) => {
+            const todo={
+                id: nanoid(),
+                text:"Hello World"
+            }
+        },
         removeTodo : () => {}
     }
 })
